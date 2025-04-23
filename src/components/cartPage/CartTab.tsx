@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import data from "../../../data/cartV2.json";
 import ShoppingCart from "./ShoppingCart";
 import CheckOutCart from "./Dashboard"; // Verify if correct

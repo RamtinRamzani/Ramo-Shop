@@ -3,7 +3,7 @@ import { lazy, Suspense } from "react";
 
 // LAZY-LOADING PAGES
 const Login = lazy(() => import("../pages/Login"));
-const SignUp = lazy(() => import("../pages/SignUp"));
+const SignUp = lazy(() => import("../pages/signUp"));
 const Landing = lazy(() => import("../pages/landing"));
 const Product = lazy(() => import("../pages/ProductPage"));
 const Shop = lazy(() => import("../pages/Shopping"));

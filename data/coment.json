@@ -1,0 +1,52 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "label": "Review",
+      "title": "Customer Reviews",
+      "button": "Write Review",
+      "selected": [
+        { "id": "newest", "label": "Newest" },
+        { "id": "oldest", "label": "Oldest" }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "img": "/images/person01.png",
+          "name": "Sofia Lamberdin",
+          "stars": 2,
+          "text": "I bought it 3 weeks ago and now come back just to say Awesome Product. I really enjoy it. At etodio dignissimos ducimus qui blanditiis praesentium voluptatum delenitiatque corrupt et quas molestias excepturi sint non provident."
+        },
+        {
+          "id": 2,
+          "img": "/images/person02.png",
+          "name": "Danilo Zuperof",
+          "stars": 3,
+          "text": "I bought it 3 weeks ago and now come back just to say Awesome Product. I really enjoy it. At etodio dignissimos ducimus qui blanditiis praesentium voluptatum delenitiatque corrupt et quas molestias excepturi sint non provident."
+        },
+        {
+          "id": 3,
+          "img": "/images/person01.png",
+          "name": "Marcell topolof",
+          "stars": 4,
+          "text": "I bought it 3 weeks ago and now come back just to say Awesome Product. I really enjoy it. At etodio dignissimos ducimus qui blanditiis praesentium voluptatum delenitiatque corrupt et quas molestias excepturi sint non provident."
+        }
+      ],
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe nisi corrupti accusamus"
+    },
+    {
+      "id": 2,
+      "label": "Additional",
+      "title": "Customer Questions",
+      "button": "Write Questions",
+      "content": "Testttttttttttt"
+    },
+    {
+      "id": 3,
+      "label": "Questions",
+      "title": "Additionals",
+      "button": "Write Additionals",
+      "content": "1234"
+    }
+  ]
+}
