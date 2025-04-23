@@ -24,7 +24,7 @@ export default function Orders() {
   }
 
   return (
-    <div className="pm-6 px-4 space-y-8">
+    <div className="pm-6 ~px-2/4 space-y-8">
       {orders.map((order) => (
         <div
           key={order.code}
@@ -61,11 +61,11 @@ export default function Orders() {
           </div>
 
           {/* Order Summary */}
-          <div className="bg-gray-50 dark:bg-gray-700/30 rounded-lg p-4 mb-6 mx-4">
+          <div className="bg-gray-50 dark:bg-gray-700/30 rounded-lg ~p-3/6 mb-6 mx-4">
             <h4 className="text-base font-medium text-gray-800 dark:text-white mb-3">
               Order Summary
             </h4>
-            <div className="space-y-2 text-sm">
+            <div className="space-y-3 ~text-xs/lg">
               <div className="flex justify-between">
                 <span className="text-gray-500 dark:text-gray-400">
                   Order code:
@@ -108,7 +108,7 @@ export default function Orders() {
                 <span className="text-gray-500 dark:text-gray-400">
                   Shipping method:
                 </span>
-                <span className="font-medium text-gray-800 dark:text-white">
+                <span className="font-medium text-gray-800 dark:text-white text-right">
                   {order.shippingMethod}
                 </span>
               </div>
@@ -116,7 +116,7 @@ export default function Orders() {
                 <span className="text-gray-500 dark:text-gray-400">
                   Payment method:
                 </span>
-                <span className="font-medium text-gray-800 dark:text-white">
+                <span className="font-medium text-gray-800 dark:text-white text-right">
                   {order.paymentMethod}
                 </span>
               </div>
@@ -124,7 +124,7 @@ export default function Orders() {
                 <span className="text-gray-500 dark:text-gray-400">
                   Estimated delivery:
                 </span>
-                <span className="font-medium text-gray-800 dark:text-white">
+                <span className="font-medium text-gray-800 dark:text-white text-right">
                   {order.estimatedDelivery}
                 </span>
               </div>
@@ -148,7 +148,7 @@ export default function Orders() {
                         ? item.images[0]
                         : "/images/placeholder.png")
                     }
-                    className="w-14 h-14 rounded-md object-cover border border-gray-200 dark:border-gray-600"
+                    className="w-14 h-14 rounded-md object-cover border border-gray-200 dark:border-gray-600 text-xs"
                     alt={item.title}
                   />
                   <div className="flex-1">

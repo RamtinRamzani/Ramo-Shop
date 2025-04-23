@@ -199,7 +199,7 @@ export default function CompleteCart() {
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Button
-          className="px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
+          className="px-6 py-3 rounded-full bg-black text-white hover:bg-gray-800 dark:bg-gray-200 dark:hover:bg-gray-400 transition-colors"
           onClick={handleConfirmOrder}
         >
           Confirm Order

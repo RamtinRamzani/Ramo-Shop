@@ -1,13 +1,13 @@
-import { HeartIcon } from "../../assets/icons";
 import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../app/store";
+import { HeartIcon } from "../../assets/icons";
+import { Loading } from "../../ui/Loading";
+import { useShoping } from "../shop/useShoping";
 import {
   addToWishlist,
-  removeFromWishlist,
   getWishlist,
+  removeFromWishlist,
 } from "./wishlistSlice";
-import { useShoping } from "../shop/useShoping";
-import { Loading } from "../../ui/Loading";
-import { RootState } from "../../app/store";
 
 export default function AddToWishlist() {
   const dispatch = useDispatch();
@@ -40,7 +40,7 @@ export default function AddToWishlist() {
 
   return (
     <button
-      className={`flex items-center justify-center w-full gap-2 px-4 py-2 mt-2 font-semibold text-black transition-all rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300 ${
+      className={`flex items-center justify-center w-full gap-2 px-4 py-2 mt-2 font-semibold text-black transition-all rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-grey-300 dark:hover:bg-grey-400 ${
         isWishlisted
           ? "bg-red-100 hover:bg-red-200"
           : "bg-white hover:bg-gray-100"

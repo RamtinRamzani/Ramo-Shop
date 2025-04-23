@@ -1,8 +1,8 @@
 import Button from "../Button";
 import CartTitle from "./CartTitle";
 import StarsRating from "../Star";
-import WishListButton from "../../components/account/AddToWishlists";
 import { formatCurrency } from "../../utils/helper";
+import AddToWishlist from "../../components/account/AddToWishlists";
 
 export function CartCol({
   className,
@@ -127,11 +127,11 @@ export function ShopCartView2({
 
   return (
     <div className="flex flex-col sm:flex-row border-1 dark:border-grey-700 h-[500px] sm:h-full rounded-sm shadow-sm cursor-pointer">
-      <div className="bg-[#F3F5F7] dark:bg-grey-800 relative h-1/2 sm:h-full sm:w-1/2 w-full">
-        <span className="absolute px-4 font-semibold ~text-xs/sm uppercase bg-white rounded-sm shadow-sm left-4 top-4">
+      <div className="bg-[#F3F5F7] dark:bg-grey-800 relative h-1/2 sm:h-full sm:w-1/2 w-full dark:text-grey-500">
+        <span className="absolute px-4 font-semibold ~text-xs/sm uppercase bg-white rounded-sm shadow-sm left-5 top-6">
           {detail}
         </span>
-        <span className="absolute px-4 font-semibold ~text-xs/sm uppercase bg-green-300 rounded-sm shadow-sm left-4 top-11">
+        <span className="absolute px-4 font-semibold ~text-xs/sm uppercase bg-green-300 rounded-sm shadow-sm left-5 top-12">
           {discount}%
         </span>
         <div className="h-full flex justify-center items-center">
@@ -156,7 +156,7 @@ export function ShopCartView2({
           <Button className="~mt-1/4 h-10 w-full" onClick={onClick}>
             See details
           </Button>
-          <WishListButton />
+          <AddToWishlist />
         </div>
       </div>
     </div>

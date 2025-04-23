@@ -65,7 +65,7 @@ function WishList() {
                     : item.images[0]
                   : "/images/placeholder.png")
               }
-              className="w-16 h-16 rounded-md object-cover border border-gray-200 dark:border-gray-600"
+              className="w-16 h-16 rounded-md object-cover border border-gray-200 dark:border-gray-600 text-xs"
               alt={item.title}
             />
             <div className="flex-1">
@@ -135,7 +135,7 @@ function WishList() {
                     : item.images[0]
                   : "/images/placeholder.png")
               }
-              className="w-16 h-16 rounded-md object-cover border border-gray-200 dark:border-gray-600"
+              className="w-16 h-16 rounded-md object-cover border border-gray-200 dark:border-gray-600 text-xs"
               alt={item.title}
             />
             <div className="flex-1">

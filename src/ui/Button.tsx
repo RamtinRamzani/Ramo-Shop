@@ -19,7 +19,7 @@ export default function Button({
 }) {
   // Base classes that apply to all buttons
   const baseClasses = `
-    font-medium rounded-md transition-all duration-200 ease-in-out
+    font-bold rounded-md transition-all duration-200 ease-in-out
     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500
     disabled:opacity-70 disabled:cursor-not-allowed
     flex items-center justify-center
@@ -36,7 +36,7 @@ export default function Button({
   const variantClasses = {
     primary: `
       bg-black text-white hover:bg-gray-800
-      dark:bg-grey-200 dark:text-grey-800 dark:hover:bg-grey-300
+      dark:bg-grey-100 dark:text-grey-900 dark:hover:bg-grey-300
     `,
     secondary: `
       bg-gray-100 text-gray-800 hover:bg-gray-200
